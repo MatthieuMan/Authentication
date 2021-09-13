@@ -16,7 +16,7 @@ docker-compose exec php composer install
 ```
 
 
-###Create database and run migration:
+### Create database and run migration:
 ```
 docker-compose exec php bin/console doctrine:database:create
 ```
@@ -26,7 +26,7 @@ Then :
 docker-compose exec php bin/console doctrine:migrations:migrate --no-interaction
 ```
 
-###Build assets
+### Build assets
 
 Run the command below to build assets, such as css :
 
