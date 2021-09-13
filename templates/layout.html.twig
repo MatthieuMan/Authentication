@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <header class="header">
+        <nav class="navbar">
+            <a href="{{ path('homepage') }}" class="nav-logo">Authenticator.</a>
+            <ul class="nav-menu">
+                {% if app.user %}
+                    <li class="nav-item">
+                        <a href="{{ path('change_password') }}" class="nav-link">Change password</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('logout') }}" class="nav-link">Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href="{{ path('login') }}" class="nav-link">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('register') }}" class="nav-link">Sign Up</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    {% block page %}
+    {% endblock %}
+{% endblock %}

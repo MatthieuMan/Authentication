@@ -1,0 +1,29 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %} {{ parent() }} - Create an account {% endblock %}
+
+{% block page %}
+<div class="page">
+    {{ form_start(registrationForm, {
+        'attr': {'class': 'form', 'novalidate': 'novalidate'}
+    }) }}
+    <div class="form__title">{{ 'register.form.title'|trans }}</div>
+
+    <div class="form__input-container">
+        {{ form_errors(registrationForm.email, {'attr': {'class': 'form__error-message'}}) }}
+        {{ form_widget(registrationForm.email, {'attr': {'placeholder': 'Email'}}) }}
+    </div>
+
+    <div class="form__input-container">
+        {{ form_errors(registrationForm.plainPassword, {'attr': {'class': 'form__error-message'}}) }}
+        {{ form_widget(registrationForm.plainPassword, {'attr': {'placeholder': 'Password'}}) }}
+    </div>
+
+    <div class="form__input-container">
+        {{ form_widget(registrationForm.phoneNumber, {'attr': {'placeholder': 'phone Number'}}) }}
+    </div>
+
+    <button type="submit">{{ 'register.form.submit'|trans }}</button>
+    {{ form_end(registrationForm) }}
+</div>
+{% endblock %}

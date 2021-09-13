@@ -1,0 +1,12 @@
+@import "./header/header";
+@import "./form/form";
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

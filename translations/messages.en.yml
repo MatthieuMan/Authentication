@@ -1,0 +1,26 @@
+change_password:
+  success: 'You have successfully changed your password! please log back in..'
+  form:
+    title: 'Change your password!'
+    submit: 'Submit'
+forgot_password:
+  form:
+    title: 'We will send you an email before resetting your password'
+    submit: 'Send email'
+  forgot_password: 'forgot_password ?'
+  send_email: '<p>Please click on the following link to log in: <a href="%urlLink%">Reset Password</a>, then you will be able to change your password by clicking on the "Change password" menu. <br /><p>Cheers!</p></p>'
+  success: 'We just sent you an email. Please click on the link to reset your password'
+  description: 'The link will expire in the next 5 minutes'
+landing_page:
+  welcome_message: 'Welcome to Authenticator'
+login:
+  form:
+    title: 'Sign in!'
+    submit: 'Sign in!'
+register:
+  account_created: 'You have successfully created an account!, please sign in..'
+  form:
+    title: 'Sign up!'
+    submit: 'Sign up'
+user_account:
+  unknown_account: 'Unknown account'

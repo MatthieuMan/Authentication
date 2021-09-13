@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %} {{ parent() }} - Forgot password {% endblock %}
+
+{% block page %}
+    <div class="page">
+        <h2>{{ 'forgot_password.success' | trans }}</h2>
+        <p>{{ 'forgot_password.description' | trans }}</p>
+    </div>
+{% endblock %}
